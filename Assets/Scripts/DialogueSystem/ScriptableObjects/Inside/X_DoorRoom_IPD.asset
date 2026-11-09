@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d5613869472374db801230b5d58ba1, type: 3}
+  m_Name: X_DoorRoom_IPD
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.Data.InteractionPointSO
+  hintText: Press E to check door
+  eventSequence:
+  - eventType: 0
+    normalDialogue: {fileID: 11400000, guid: 17e20c293bef9954bb5f0e9f807b97a8, type: 2}
+    metaDialogue: {fileID: 0}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  - eventType: 0
+    normalDialogue: {fileID: 11400000, guid: 461c0983f4d863248804c80158af9f81, type: 2}
+    metaDialogue: {fileID: 0}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  - eventType: 0
+    normalDialogue: {fileID: 11400000, guid: e02b0bb3a81bd1e4bbd6123b30a91e40, type: 2}
+    metaDialogue: {fileID: 0}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  loopLastEntry: 0
+  randomizeEntry: 1
+  onActivated:
+    events: []
+  onCompleted:
+    events:
+    - rid: 2168746681146015854
+  references:
+    version: 2
+    RefIds:
+    - rid: 2168746681146015854
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0
+        lockCamera: 0
+        hasParent: 1

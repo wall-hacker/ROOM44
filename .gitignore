@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------- Unity generated
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+/Assets/AssetStoreTools*
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+sysinfo.txt
+crashlytics-build.properties
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# ---------------------------------------------------------------- IDE / OS
+.vs/
+.vscode/
+.idea/
+.gradle/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+.DS_Store
+Thumbs.db
+
+# ---------------------------------------------------------------- not part of the game
+# media-capture tooling and its post-production scripts
+/Assets/_MediaCapture/
+/Assets/_MediaCapture.meta
+/GameplayBreakdown/_tools/
+# full-size media masters (GitHub-sized copies live in GameplayBreakdown/github/)
+/GameplayBreakdown/videos/
+/GameplayBreakdown/trailer/
+/GameplayBreakdown/screenshots/raw/

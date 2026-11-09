@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: TerminalTheme
+  m_EditorClassIdentifier: Assembly-CSharp:TerminalHorror.UI:TerminalThemeSO
+  backgroundColor: {r: 0.04, g: 0.04, b: 0.04, a: 1}
+  foregroundColor: {r: 0.72, g: 1, b: 0.85, a: 1}
+  promptColor: {r: 0.4, g: 1, b: 0.6, a: 1}
+  errorColor: {r: 1, g: 0.35, b: 0.35, a: 1}
+  dimColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  terminalFont: {fileID: 11400000, guid: 3e60569d8c38aff45830656f0be7fc6c, type: 2}
+  fontSize: 0.01
+  lineSpacing: 4
+  cursorChar: "\u258C"
+  cursorBlinkRate: 0.53
+  scrollSensitivity: 3
+  maxStoredLines: 500
+  typewriterCharDelay: 0.025
+  typewriterLineDelay: 0.08

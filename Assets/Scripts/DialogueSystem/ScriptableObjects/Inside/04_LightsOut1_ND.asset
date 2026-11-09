@@ -1,0 +1,156 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc04ea13dd28af5498af365f6c19c47f, type: 3}
+  m_Name: 04_LightsOut1_ND
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.Data.NormalDialogueSO
+  lines:
+  - characterName: 
+    characterPortrait: {fileID: 0}
+    characterPortraitBackground: {fileID: 0}
+    text: '|.|.|.|'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: You
+    characterPortrait: {fileID: 21300000, guid: 1a133b06bbc35444dba2302c28c4f961, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: 296cc3a1ba1f3364c8b4190a7f355d26, type: 3}
+    text: '`(I should probably go see what happend.)'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  onDialogueComplete:
+    events:
+    - rid: 6929337907100778726
+    - rid: 6929337907100778727
+    - rid: 6929337907100778728
+    - rid: 6929337907100778729
+    - rid: 6929337907100778730
+    - rid: 6929337907100778731
+    - rid: 6929337907100778732
+    - rid: 6929337907100778733
+    - rid: 6929337907100778736
+    - rid: 6929337907100778737
+  references:
+    version: 2
+    RefIds:
+    - rid: 6929337907100778726
+      type: {class: SetActiveEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: TerminalManager
+        active: 0
+    - rid: 6929337907100778727
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        anchor:
+          objectName: CameraTargetMonitor
+        blendDuration: 0.5
+        lockCamera: 1
+        hasParent: 1
+    - rid: 6929337907100778728
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.5
+        animator:
+          objectName: Player
+        paramType: 1
+        paramName: IsSitting
+        boolValue: 0
+        intValue: 0
+        floatValue: 0
+    - rid: 6929337907100778729
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.55
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0.5
+        lockCamera: 1
+        hasParent: 1
+    - rid: 6929337907100778730
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 1
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 4
+        rotationMode: 2
+        position: {x: 0, y: 0, z: 0}
+        rotationEuler: {x: 0, y: 90, z: 0}
+        duration: 1
+        useDestinationTransform: 0
+    - rid: 6929337907100778731
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 2
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 0
+        rotationMode: 4
+        position: {x: -75.46, y: 0.01249991, z: -118.4}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 1
+        useDestinationTransform: 0
+    - rid: 6929337907100778732
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3.1
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 4
+        rotationMode: 3
+        position: {x: 0, y: 0, z: 0}
+        rotationEuler: {x: 0, y: 90, z: 0}
+        duration: 0.5
+        useDestinationTransform: 0
+    - rid: 6929337907100778733
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3.6
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0
+        lockCamera: 1
+        hasParent: 1
+    - rid: 6929337907100778736
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3.6
+        target:
+          objectName: 04_LightsOut_IP
+        destination:
+          objectName: 
+        positionMode: 1
+        rotationMode: 4
+        position: {x: 0, y: 0, z: 1.5}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 0.1
+        useDestinationTransform: 1
+    - rid: 6929337907100778737
+      type: {class: SetActiveEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3.7
+        target:
+          objectName: 04_LightsOut_IP
+        active: 0

@@ -1,0 +1,275 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc04ea13dd28af5498af365f6c19c47f, type: 3}
+  m_Name: 02_MaidDesk1_ND
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.Data.NormalDialogueSO
+  lines:
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: "`Welcome to Jinja Net Caf\xE9!"
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: You
+    characterPortrait: {fileID: 21300000, guid: 1a133b06bbc35444dba2302c28c4f961, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: 296cc3a1ba1f3364c8b4190a7f355d26, type: 3}
+    text: '`Good evening.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: 
+    characterPortrait: {fileID: 0}
+    characterPortraitBackground: {fileID: 0}
+    text: The hostess glances toward the reservation board beside her.
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: 
+    characterPortrait: {fileID: 0}
+    characterPortraitBackground: {fileID: 0}
+    text: Every room number has been marked unavailable except one.|| Room 44.
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`I apologize. We are unusually busy tonight.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: You
+    characterPortrait: {fileID: 21300000, guid: 1a133b06bbc35444dba2302c28c4f961, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: 296cc3a1ba1f3364c8b4190a7f355d26, type: 3}
+    text: "`No problem. I just need a place to work for a \n```few hours. (|.|.|.another
+      lie you tell yourself and \n`````others)"
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`There is one room remaining.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`However|.|.|. there is a minor issue with the com-
+
+      ``puter inside.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`It appears the operating system failed to start
+
+      ``correctly. It
+      only boots into the terminal now.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`The previous customer who booked the room
+
+      ``left in hurry.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: 
+    characterPortrait: {fileID: 0}
+    characterPortraitBackground: {fileID: 0}
+    text: 'Something about the way she says it makes you
+
+      hesitate.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: You
+    characterPortrait: {fileID: 21300000, guid: 1a133b06bbc35444dba2302c28c4f961, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: 296cc3a1ba1f3364c8b4190a7f355d26, type: 3}
+    text: '`If it is only a boot issue, I may be able to fix it
+
+      ```myself.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`Are you familiar with computers?'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: You
+    characterPortrait: {fileID: 21300000, guid: 1a133b06bbc35444dba2302c28c4f961, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: 296cc3a1ba1f3364c8b4190a7f355d26, type: 3}
+    text: '`I studied computer science. (you immediately
+
+      ```regret how awkward
+      that sounded) '
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`Then perhaps the room will be less inconvenient
+
+      ```for you than
+      for others.'
+    typeSpeed: 0.05
+    onLineStart:
+      events:
+      - rid: 2168746496532414836
+      - rid: 2168746496532414837
+      - rid: 2168746496532414839
+      - rid: 2168746496532414840
+    onLineEnd:
+      events: []
+  - characterName: 
+    characterPortrait: {fileID: 0}
+    characterPortraitBackground: {fileID: 0}
+    text: 'The hostess reaches beneath the counter and
+
+      places a key on the
+      desk.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`If you experience any unusual behavior from the
+
+      ```machine|.|.|.|
+      please inform me immediately.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: You
+    characterPortrait: {fileID: 21300000, guid: 1a133b06bbc35444dba2302c28c4f961, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: 296cc3a1ba1f3364c8b4190a7f355d26, type: 3}
+    text: '`Understood.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: 
+    characterPortrait: {fileID: 0}
+    characterPortraitBackground: {fileID: 0}
+    text: 'As you reach for the key, her hand remains on it
+
+      for half a second
+      too long.'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  - characterName: Maid
+    characterPortrait: {fileID: 21300000, guid: afa0124e800babe4a88c31dcddd0cdcf, type: 3}
+    characterPortraitBackground: {fileID: 21300000, guid: ed2c8205fb0e38a46a9ea054ec01bb28, type: 3}
+    text: '`Have a good evening, then!'
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  onDialogueComplete:
+    events:
+    - rid: 2168746681146015937
+    - rid: 2168746681146015938
+  references:
+    version: 2
+    RefIds:
+    - rid: 2168746496532414836
+      type: {class: ChangeLighting, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.5
+        targetAmbientColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
+        targetAmbientIntensity: 1
+        duration: 0.01
+    - rid: 2168746496532414837
+      type: {class: ChangeLighting, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.6
+        targetAmbientColor: {r: 0.90588236, g: 0.8901961, b: 0.83137256, a: 1}
+        targetAmbientIntensity: 1
+        duration: 0.01
+    - rid: 2168746496532414839
+      type: {class: ChangeLighting, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.7
+        targetAmbientColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
+        targetAmbientIntensity: 1
+        duration: 0.01
+    - rid: 2168746496532414840
+      type: {class: ChangeLighting, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.8
+        targetAmbientColor: {r: 0.9058824, g: 0.89019614, b: 0.8313726, a: 1}
+        targetAmbientIntensity: 1
+        duration: 0.01
+    - rid: 2168746681146015937
+      type: {class: SetActiveEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: X_DoorRoom44_IP
+        active: 0
+    - rid: 2168746681146015938
+      type: {class: SetActiveEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: 03_DoorRoom44_IP
+        active: 1

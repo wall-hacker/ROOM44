@@ -1,0 +1,180 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b2b696c249b0f449edb0c3fa486be5, type: 3}
+  m_Name: 03_DoorRoom44_MD
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.Data.MetaDialogueSO
+  characterName: 
+  characterPortrait: {fileID: 0}
+  questionText: 'Enter Room 44? '
+  typeOutQuestion: 1
+  typeSpeed: 0.04
+  answers:
+  - answerText: Yes
+    onSelected:
+      events:
+      - rid: 2168746681146016215
+      - rid: 2168746681146015969
+      - rid: 2168746681146016210
+      - rid: 2168746681146015961
+      - rid: 2168746681146015986
+      - rid: 2168746681146015985
+      - rid: 2168746681146016006
+      - rid: 2168746681146016015
+      - rid: 2168746681146016028
+    followUpDialogue: {fileID: 0}
+  - answerText: No
+    onSelected:
+      events:
+      - rid: 2168746681146015991
+    followUpDialogue: {fileID: 0}
+  onDialogueOpen:
+    events:
+    - rid: 2168746681146016211
+    - rid: 2168746681146016216
+  references:
+    version: 2
+    RefIds:
+    - rid: 2168746681146015961
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 1.3
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 0
+        rotationMode: 4
+        position: {x: -75.46, y: 0.01249991, z: -117}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 1
+        useDestinationTransform: 0
+    - rid: 2168746681146015969
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0
+        lockCamera: 1
+        hasParent: 1
+    - rid: 2168746681146015985
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3
+        animator:
+          objectName: Player
+        paramType: 1
+        paramName: IsSitting
+        boolValue: 1
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746681146015986
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 2.3
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 0
+        rotationMode: 0
+        position: {x: -76.15, y: 0.346, z: -117.136}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 0.5
+        useDestinationTransform: 0
+    - rid: 2168746681146015991
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0
+        lockCamera: 0
+        hasParent: 1
+    - rid: 2168746681146016006
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3
+        anchor:
+          objectName: CameraTargetMonitor
+        blendDuration: 0.5
+        lockCamera: 1
+        hasParent: 1
+    - rid: 2168746681146016015
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3.5
+        anchor:
+          objectName: CameraTargetMonitorClose
+        blendDuration: 0.5
+        lockCamera: 1
+        hasParent: 1
+    - rid: 2168746681146016028
+      type: {class: SetActiveEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3.1
+        target:
+          objectName: TerminalManager
+        active: 1
+    - rid: 2168746681146016210
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.5
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 4
+        rotationMode: 2
+        position: {x: 0, y: 0, z: 0}
+        rotationEuler: {x: 0, y: -90, z: 0}
+        duration: 1
+        useDestinationTransform: 1
+    - rid: 2168746681146016211
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 0
+        rotationMode: 0
+        position: {x: -75.3, y: 0.01249991, z: -118.5}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 0.5
+        useDestinationTransform: 0
+    - rid: 2168746681146016215
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        animator:
+          objectName: Player
+        paramType: 1
+        paramName: IsMoving
+        boolValue: 0
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746681146016216
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: CameraPosition
+        destination:
+          objectName: 
+        positionMode: 4
+        rotationMode: 0
+        position: {x: 0, y: 0, z: 0}
+        rotationEuler: {x: 30, y: 0, z: 0}
+        duration: 0.5
+        useDestinationTransform: 0

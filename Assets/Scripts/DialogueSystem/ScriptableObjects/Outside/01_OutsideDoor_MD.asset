@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b2b696c249b0f449edb0c3fa486be5, type: 3}
+  m_Name: 01_OutsideDoor_MD
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.Data.MetaDialogueSO
+  characterName: 
+  characterPortrait: {fileID: 0}
+  questionText: "Enter the internet caf\xE9?"
+  typeOutQuestion: 1
+  typeSpeed: 0.04
+  answers:
+  - answerText: Yes
+    onSelected:
+      events:
+      - rid: 2168746493932994661
+      - rid: 2168746493932994662
+      - rid: 2168746493932994663
+      - rid: 2168746493932994664
+      - rid: 2168746496532414573
+      - rid: 2168746493932994665
+      - rid: 2168746493932994666
+      - rid: 2168746493932994709
+      - rid: 2168746493932994710
+      - rid: 2168746496532414543
+      - rid: 2168746493932994667
+      - rid: 2168746493932994670
+      - rid: 2168746496532414577
+      - rid: 2168746651650621541
+      - rid: 2168746651650621542
+      - rid: 2168746651650621543
+      - rid: 2168746651650621598
+      - rid: 2168746651650621599
+    followUpDialogue: {fileID: 0}
+  - answerText: No
+    onSelected:
+      events:
+      - rid: 2168746496532414552
+      - rid: 2168746493932994701
+    followUpDialogue: {fileID: 0}
+  onDialogueOpen:
+    events: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2168746493932994661
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        anchor:
+          objectName: CameraTargetOutside
+        blendDuration: 0.5
+        lockCamera: 1
+        hasParent: 0
+    - rid: 2168746493932994662
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.2
+        target:
+          objectName: DoorRight
+        destination:
+          objectName: 
+        positionMode: 3
+        rotationMode: 3
+        position: {x: 0, y: 0.4, z: 0}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 1
+        useDestinationTransform: 0
+    - rid: 2168746493932994663
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.2
+        target:
+          objectName: DoorLeft
+        destination:
+          objectName: 
+        positionMode: 3
+        rotationMode: 3
+        position: {x: 0, y: -0.4, z: 0}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 1
+        useDestinationTransform: 0
+    - rid: 2168746493932994664
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 1.4
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 3
+        rotationMode: 3
+        position: {x: 0, y: 0, z: -6.5}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 1.4
+        useDestinationTransform: 0
+    - rid: 2168746493932994665
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 1.4
+        animator:
+          objectName: Player
+        paramType: 1
+        paramName: IsMoving
+        boolValue: 1
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746493932994666
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 2.8
+        animator:
+          objectName: 
+        paramType: 1
+        paramName: IsMoving
+        boolValue: 0
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746493932994667
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 4.2
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0.5
+        lockCamera: 0
+        hasParent: 1
+    - rid: 2168746493932994670
+      type: {class: ChangeLighting, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 4.25
+        targetAmbientColor: {r: 0.90588236, g: 0.8901961, b: 0.83137256, a: 1}
+        targetAmbientIntensity: 1
+        duration: 0.1
+    - rid: 2168746493932994701
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 1
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0
+        lockCamera: 0
+        hasParent: 1
+    - rid: 2168746493932994709
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3.4
+        target:
+          objectName: DoorLeft
+        destination:
+          objectName: 
+        positionMode: 3
+        rotationMode: 3
+        position: {x: 0, y: 0.4, z: 0}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 1
+        useDestinationTransform: 1
+    - rid: 2168746493932994710
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 3.4
+        target:
+          objectName: DoorRight
+        destination:
+          objectName: 
+        positionMode: 3
+        rotationMode: 3
+        position: {x: 0, y: -0.4, z: 0}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 1
+        useDestinationTransform: 1
+    - rid: 2168746496532414543
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 4
+        target:
+          objectName: CameraPosition
+        destination:
+          objectName: 
+        positionMode: 4
+        rotationMode: 0
+        position: {x: 0, y: 0, z: 0}
+        rotationEuler: {x: 0, y: 180, z: 0}
+        duration: 0
+        useDestinationTransform: 0
+    - rid: 2168746496532414552
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: CameraPosition
+        destination:
+          objectName: 
+        positionMode: 4
+        rotationMode: 0
+        position: {x: 0, y: 0, z: 0}
+        rotationEuler: {x: 0, y: 180, z: 0}
+        duration: 1
+        useDestinationTransform: 0
+    - rid: 2168746496532414573
+      type: {class: SetActiveEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.1
+        target:
+          objectName: 01_OutsideDoor_IP
+        active: 0
+    - rid: 2168746496532414577
+      type: {class: SetActiveEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 5
+        target:
+          objectName: X_InsideDoorLocked_IP
+        active: 1
+    - rid: 2168746651650621541
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 4
+        animator:
+          objectName: AudioStreet
+        paramType: 1
+        paramName: Mute
+        boolValue: 1
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746651650621542
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 4
+        animator:
+          objectName: AudioLamp
+        paramType: 1
+        paramName: Mute
+        boolValue: 1
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746651650621543
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 4
+        animator:
+          objectName: AudioCrow
+        paramType: 1
+        paramName: Mute
+        boolValue: 1
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746651650621598
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 4
+        animator:
+          objectName: AudioCafeMusic
+        paramType: 1
+        paramName: Mute
+        boolValue: 0
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746651650621599
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 4
+        animator:
+          objectName: AudioKeyboards
+        paramType: 1
+        paramName: Mute
+        boolValue: 0
+        intValue: 0
+        floatValue: 0

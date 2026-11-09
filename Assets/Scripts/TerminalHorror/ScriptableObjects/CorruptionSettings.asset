@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: CorruptionSettings
+  m_EditorClassIdentifier: Assembly-CSharp:TerminalHorror.Corruption:CorruptionSettingsSO
+  baseIntensity: 0
+  enabledEffects: 273
+  maxGlitchFraction: 0.25
+  ghostMessages:
+  - <color=#330000>help me</color>
+  - <color=#330000>don't read this</color>
+  - <color=#330000>you found it</color>
+  - <color=#330000>it knows you're here</color>
+  - <color=#220022>she never left</color>
+  - <color=#002222>i can see you</color>
+  hallucinationCommands:
+  - leave
+  - run
+  - help
+  - why
+  - stop
+  - don't
+  terminalTalkLines:
+  - I've been waiting.
+  - Why did you come back?
+  - You already know what this is.
+  - There is no safe directory.
+  - You can't clear this.
+  - Type anything. I'll answer.
+  - ls won't help you now.
+  - Run.
+  fakeCrashLines:
+  - Segmentation fault (core dumped)
+  - 'KERNEL PANIC - not syncing: Fatal exception'
+  - 'BUG: soft lockup - CPU#0 stuck'
+  - 'Oops: general protection fault'
+  - '[ 0.000000] Calibrating delay loop...'
+  - 'FATAL ERROR: heap corruption detected'
+  maxResponseDelay: 3
+  ghostMessageProbability: 0.08
+  inputOverwriteProbability: 0.05
+  fakeCrashProbability: 0.02
+  hallucinationProbability: 0.04
+  terminalTalkProbability: 0.06

@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d5613869472374db801230b5d58ba1, type: 3}
+  m_Name: X_OutsideStreet_IPD
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.Data.InteractionPointSO
+  hintText: 
+  eventSequence:
+  - eventType: 0
+    normalDialogue: {fileID: 11400000, guid: 7f41693ea1e0ee7418254b9b979734a4, type: 2}
+    metaDialogue: {fileID: 0}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  - eventType: 0
+    normalDialogue: {fileID: 11400000, guid: 057a7ea1b05bb88458bbdf6f5f1e934f, type: 2}
+    metaDialogue: {fileID: 0}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  - eventType: 0
+    normalDialogue: {fileID: 11400000, guid: 3148d0b2822747a428ca49e03a840cfd, type: 2}
+    metaDialogue: {fileID: 0}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  loopLastEntry: 0
+  randomizeEntry: 1
+  onActivated:
+    events: []
+  onCompleted:
+    events:
+    - rid: 2168746496532414612
+    - rid: 2168746496532414610
+    - rid: 2168746496532414673
+  references:
+    version: 2
+    RefIds:
+    - rid: 2168746496532414610
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0.5
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 0
+        rotationMode: 4
+        position: {x: -104, y: -0.03281035, z: -85.5}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 2
+        useDestinationTransform: 1
+    - rid: 2168746496532414612
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 4
+        rotationMode: 0
+        position: {x: 0, y: 0, z: 0}
+        rotationEuler: {x: 0, y: 90, z: 0}
+        duration: 1.5
+        useDestinationTransform: 1
+    - rid: 2168746496532414673
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 2.6
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0
+        lockCamera: 0
+        hasParent: 1

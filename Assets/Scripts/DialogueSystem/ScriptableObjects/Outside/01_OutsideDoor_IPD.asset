@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d5613869472374db801230b5d58ba1, type: 3}
+  m_Name: 01_OutsideDoor_IPD
+  m_EditorClassIdentifier: Assembly-CSharp:DialogueSystem.Data:InteractionPointSO
+  hintText: Press E to interact
+  eventSequence:
+  - eventType: 1
+    normalDialogue: {fileID: 0}
+    metaDialogue: {fileID: 11400000, guid: 6194cb06a39786c43855d4ec5c8cea76, type: 2}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  loopLastEntry: 1
+  randomizeEntry: 0
+  onActivated:
+    events:
+    - rid: 2168746493932994622
+    - rid: 2168746493932994623
+    - rid: 2168746493932994631
+  onCompleted:
+    events: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 2168746493932994622
+      type: {class: AnimatorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        animator:
+          objectName: Player
+        paramType: 1
+        paramName: IsMoving
+        boolValue: 0
+        intValue: 0
+        floatValue: 0
+    - rid: 2168746493932994623
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: Player
+        destination:
+          objectName: 
+        positionMode: 0
+        rotationMode: 0
+        position: {x: -85.95702, y: -0.03281035, z: -88.67773}
+        rotationEuler: {x: 0, y: 180, z: 0}
+        duration: 1
+        useDestinationTransform: 0
+    - rid: 2168746493932994631
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: CameraPosition
+        destination:
+          objectName: 
+        positionMode: 4
+        rotationMode: 0
+        position: {x: 0, y: 0, z: 0}
+        rotationEuler: {x: -45, y: 180, z: 0}
+        duration: 1
+        useDestinationTransform: 0

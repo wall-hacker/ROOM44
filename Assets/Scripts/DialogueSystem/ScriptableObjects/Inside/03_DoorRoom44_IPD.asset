@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10d5613869472374db801230b5d58ba1, type: 3}
+  m_Name: 03_DoorRoom44_IPD
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.Data.InteractionPointSO
+  hintText: Press E to check door
+  eventSequence:
+  - eventType: 0
+    normalDialogue: {fileID: 11400000, guid: 761dacaab16b15844a886c86cd3f6e16, type: 2}
+    metaDialogue: {fileID: 0}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  - eventType: 1
+    normalDialogue: {fileID: 0}
+    metaDialogue: {fileID: 11400000, guid: 97a19d0136b317f41bc03fac8964b0dc, type: 2}
+    customEvents:
+      events: []
+    cameraAnchor: {fileID: 0}
+    cameraLockDuration: 0
+  loopLastEntry: 1
+  randomizeEntry: 0
+  onActivated:
+    events: []
+  onCompleted:
+    events: []
+  references:
+    version: 2
+    RefIds: []

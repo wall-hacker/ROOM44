@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc04ea13dd28af5498af365f6c19c47f, type: 3}
+  m_Name: 03_DoorRoom44_ND
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueSystem.Data.NormalDialogueSO
+  lines:
+  - characterName: 
+    characterPortrait: {fileID: 0}
+    characterPortraitBackground: {fileID: 0}
+    text: (The door unlocks with a metallic clunk.)
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events:
+      - rid: 2168746681146015936
+  - characterName: 
+    characterPortrait: {fileID: 0}
+    characterPortraitBackground: {fileID: 0}
+    text: (You notice cold air rushing out.)
+    typeSpeed: 0.05
+    onLineStart:
+      events: []
+    onLineEnd:
+      events: []
+  onDialogueComplete:
+    events:
+    - rid: 2168746681146015980
+  references:
+    version: 2
+    RefIds:
+    - rid: 2168746681146015936
+      type: {class: MoveObjectEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        target:
+          objectName: DoorRoom44
+        destination:
+          objectName: 
+        positionMode: 3
+        rotationMode: 4
+        position: {x: -0.0045, y: 0, z: 0}
+        rotationEuler: {x: 0, y: 0, z: 0}
+        duration: 0.75
+        useDestinationTransform: 0
+    - rid: 2168746681146015980
+      type: {class: CameraAnchorEvent, ns: DialogueSystem.Events, asm: Assembly-CSharp}
+      data:
+        delay: 0
+        anchor:
+          objectName: CameraPosition
+        blendDuration: 0
+        lockCamera: 0
+        hasParent: 1

@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: FilesystemDefinition
+  m_EditorClassIdentifier: Assembly-CSharp:TerminalHorror.ScriptableObjects:FilesystemDefinition
+  rootDirectory:
+    name: /
+    permissions: 5
+    onEnterEventId: 
+    owner: root
+    group: root
+    files:
+    - name: welcome.txt
+      fileType: 1
+      contentLines:
+      - WW91IHNob3VsZCBub3QgYmUgaGVyZS4=
+      permissions: 1
+      onReadEventId: evt_repair_welcome.txt
+      progressiveReveal: 0
+      revealedLineCount: -1
+      owner: root
+      group: root
+    subDirectories:
+    - name: home
+      permissions: 5
+      onEnterEventId: 
+      owner: root
+      group: root
+      files: []
+      subDirectories:
+      - name: user
+        permissions: 5
+        onEnterEventId: 
+        owner: root
+        group: root
+        files:
+        - name: README.txt
+          fileType: 0
+          contentLines:
+          - Welcome.
+          - Type 'help' to see available commands.
+          - Type 'ls' to list files.
+          - Type 'cat <filename>' to read a file.
+          - 
+          - You should not be here.
+          permissions: 1
+          onReadEventId: 
+          progressiveReveal: 0
+          revealedLineCount: -1
+          owner: root
+          group: root
+        subDirectories: []
+    - name: var
+      permissions: 5
+      onEnterEventId: 
+      owner: root
+      group: root
+      files: []
+      subDirectories:
+      - name: log
+        permissions: 5
+        onEnterEventId: 
+        owner: root
+        group: root
+        files:
+        - name: system.log
+          fileType: 0
+          contentLines:
+          - '[2003-08-12 03:14:07] System boot.'
+          - '[2003-08-12 03:14:08] Filesystem mounted.'
+          - '[2003-08-12 03:14:09] User session started.'
+          - '[2003-08-12 03:14:??] ?????????'
+          permissions: 1
+          onReadEventId: 
+          progressiveReveal: 0
+          revealedLineCount: -1
+          owner: root
+          group: root
+        subDirectories: []
